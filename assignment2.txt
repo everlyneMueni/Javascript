@@ -1,0 +1,38 @@
+Explain declaration in Javascript.
+Declaring (creating) javascript variables.When you declare a javascript variable with the var keyword.
+After the declaration , the variable has no value(technically it has the value of undefined)
+
+examples:
+var x;
+var cup;
+var cupar;
+
+
+Explain definition in Javascript.
+
+A function definition consists of the function keyword, followed by:
+The name of the function.
+A list of parameters to the function, enclosed in parentheses and separated by commas.
+
+examples:
+The following code defines a simple function named square.
+function(number){
+	return number*number;
+}
+
+Explain initialization.
+Initialization means assigning an initial value to a variable.
+so undefined is the initial value of a declared variable.
+var x = 0;
+
+function f() {
+  var x = y = 1; // x is declared locally. y is not!
+}
+f();
+
+console.log(x, y); // Throws a ReferenceError in strict mode (y is not defined). 0, 1 otherwise. 
+// In non-strict mode:
+// x is the global one as expected
+// y leaked outside of the function, though!
+
+

@@ -1,0 +1,10 @@
+DIFFERENCES BETWEEN UNDEFINED AND NULL IN CONNECTION TO JAVASCRIPT.
+
+Undefined is a variable type whereas null is an object with a value,no properties, is non-mutable and only a single instance
+of the same exists in the system at all time.
+
+A major difference between null an undefined is in the way they are converted to primitive types. When you perform arithmetic conversion
+on null the value determined is 0.
+
+A variable is said to be undefined if it has been declared but no value has been given to it. contrary to this, null is a value
+that can be assigned to a variable and represents no value.
