@@ -1,0 +1,28 @@
+fruit_list = ["oranges","bananas","melons","kiwi","grapes","guava","passion"];
+
+
+function printFruits(fruit_list)
+{
+console.log(fruit_list);
+}
+
+
+(7) ["oranges", "bananas", "melons", "kiwi", "grapes", "guava", "passion"]
+
+
+var fruit_index = prompt ("from fruit_list pick 6");
+
+
+console.log(fruit_list[fruit_index]);
+
+
+function pickFruit(fruit_list, fruit_index)
+
+
+{alert(fruit_list[fruit_index]);}
+
+
+VM514:2 passion
+
+
+undefined
