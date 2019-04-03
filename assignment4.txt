@@ -1,0 +1,40 @@
+fruits= {"melons": 100,"pineapples": 150,"oranges": 30,"peach": 35}
+
+
+{melons: 100, pineapples: 150, oranges: 30, peach: 35}
+
+
+var quantity=2
+
+
+undefined
+
+
+var price=fruits["oranges"]*quantity
+
+
+undefined
+
+
+price
+60
+
+
+
+function calculateFruitCost(specify,qty)
+
+ {
+fruits={"melons":100,"oranges":30,"pineapples":150,"peach":35};
+
+
+console.log(quantity +" "+"for ksh"+price);}
+
+
+undefined
+
+
+calculateFruitCost("oranges",2)
+
+
+2 for ksh60
+
