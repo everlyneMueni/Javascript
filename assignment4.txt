@@ -1,40 +1,33 @@
-fruits= {"melons": 100,"pineapples": 150,"oranges": 30,"peach": 35}
+function calculateFruitCost(fruitName,quantity){
 
 
-{melons: 100, pineapples: 150, oranges: 30, peach: 35}
+	var fruits={"banana":10,"melon":20,"apple":30};
+ 
+
+   var price=fruits[fruitName]*quantity;
+	
+
+return quantity +" "+fruitName+" "+"for KES"+price;
 
 
-var quantity=2
-
-
-undefined
-
-
-var price=fruits["oranges"]*quantity
-
-
-undefined
-
-
-price
-60
-
-
-
-function calculateFruitCost(specify,qty)
-
- {
-fruits={"melons":100,"oranges":30,"pineapples":150,"peach":35};
-
-
-console.log(quantity +" "+"for ksh"+price);}
-
+}
 
 undefined
 
 
-calculateFruitCost("oranges",2)
+calculateFruitCost("banana",2)
 
 
-2 for ksh60
+"2 banana for KES20"
 
+
+calculateFruitCost("melon",5)
+
+
+"5 melon for KES100"
+
+
+calculateFruitCost("apple",15)
+
+
+"15 apple for KES450"
