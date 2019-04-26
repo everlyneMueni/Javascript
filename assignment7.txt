@@ -1,0 +1,28 @@
+class KioskCalc {
+  
+  constructor(fruit,quantity) {
+ 
+    this.fruit = fruit;
+    this.quantity = quantity;
+    
+    
+    this.fruitsPriceList={"peach":50,"bananas":25};
+  }  
+  getTotalCost() {
+    var price = this.fruitsPriceList[this.fruit]*this.quantity;
+    return this.quantity+ " " + this.fruit + " " + "for KES " + price;
+  }
+  }
+
+
+
+let kioskCalc1=new KioskCalc("peach",2);
+let kioskCalc2=new KioskCalc("bananas",5);
+
+
+console.log(kioskCalc1.getTotalCost());
+console.log(kioskCalc2.getTotalCost());
+
+
+"2 peach for KES 100"
+"5 bananas for KES 125"
