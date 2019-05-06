@@ -1,0 +1,21 @@
+let user = {
+  name:"Evelyne Kyengo",
+  year:22
+};
+let{name:name,year:age,isStudent="absent"}=user;
+console.log(name,age,isStudent);
+
+
+let ask=(question,yes,no)=>{
+  if (confirm(question,yes,no))yes()
+  else no();
+}
+ask("you agree?",
+    ()=>{console.log("you agreed")},
+    ()=>{console.log("you canceled the execution");}
+    );
+
+"Evelyne Kyengo"
+22
+"absent"
+"you agreed"
