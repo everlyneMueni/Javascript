@@ -1,0 +1,114 @@
+class MumMboga {
+  
+  constructor(products,carts,orders,customers) {
+    this.products = [];
+    this.carts = [];
+    this.orders = [];
+    this.customers  = [];
+  }
+  addProducts(productid,name,price,quantity){
+  let product ={
+    productid:productid,
+    name:name,
+    price:price,
+    quantity:quantity,
+  }
+  this.products.push(product);
+    
+    
+  }
+  getProduct(productid){
+    for(var i=0;i<this.products.length;i++){
+      let product = this.products[i];
+      if(product.productid===productid){
+        return product
+      }
+    }
+  }
+  removeProduct(productid){
+    let product = this.getProduct(productid)
+    let index =this.products.indexOf(product)
+    this.products.splice(index,1)
+  }
+  updateProduct(productid,name,price,quantity){
+    let product=this.getProduct(productid);
+    let myIndex=this.products.indexOf(product);
+    this.products[myIndex]={productid:productid,name:name,price:price,quantity:quantity};
+    this.products.push(product)
+  }
+  getProductCatalog(){
+    return this.products
+  }
+  addToCart(cartid,product,orderQuantity,customerid){
+    let cart={
+      cartid:cartid,
+      product:product,
+      orderQuantity:orderQuantity,
+      customerid:customerid,
+    }
+    this.carts.push(cart)
+  }
+  removeFromCart(productid){
+    let product=this.getProduct(productid)
+    let index=this.products.indexOf(product)
+    this.products.splice(index,2)
+  }
+  createOrder(orderid,cartid){
+    let order={
+      orderid:orderid,
+      cartid:cartid,
+    }
+    this.order.push(order)
+  }
+  cancelOrder(orderid){
+    let order=this.getOrder(orderid)
+    let index=this.order.indexOf(order)
+    this.order.splice(index,1)
+  }
+  calculateOrderCost(orderid){
+    for(var i=0; i<this.orders.length;i++){
+      let order=this.orders[i];
+      if(order.orderid==orderid){
+        return order
+      }
+    }
+  }
+  getOrder(orderid){
+  }  
+  }
+  var mumMboga=new MumMboga()
+  mumMboga.addProducts(1,"Kales",35,15)
+  mumMboga.addProducts(1,"Mangoes",20,5)
+  mumMboga.addProducts(1,"managu",45,10)
+  console.log(mumMboga.products)
+  mumMboga.removeProduct(1)
+  console.log(mumMboga.products)
+
+
+  [[object Object] {
+  name: "Kales",
+  price: 35,
+  productid: 1,
+  quantity: 15
+}, [object Object] {
+  name: "Mangoes",
+  price: 20,
+  productid: 1,
+  quantity: 5
+}, [object Object] {
+  name: "managu",
+  price: 45,
+  productid: 1,
+  quantity: 10
+}]
+[[object Object] {
+  name: "Mangoes",
+  price: 20,
+  productid: 1,
+  quantity: 5
+}, [object Object] {
+  name: "managu",
+  price: 45,
+  productid: 1,
+  quantity: 10
+}]
