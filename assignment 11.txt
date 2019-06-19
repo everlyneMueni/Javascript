@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Greens Kiosk</title>
+</head>
+<body>
+  <h1 id="title">Welcome to Greens Kiosk</h1>
+  <p>We sell fruits and vegetables</p>
+  <h3 id="greens">Fruits</h3>
+  <ul id="fruList">
+    <li>Limes</li>
+    <li>kiwi</li>
+    <li>Peach</li>
+  </ul>
+  <h3 id="grocer">Vegetables</h3>
+  <ul id="vegList">
+    <li>onions</li>
+    <li>Tomatoes</li>
+    <li>kales</li>
+  </ul>
+</body>
+</html>
+
+var body = document.body
+body.style.backgroundColor="silver"
+
+
+var h1 = document.getElementById("title")
+h1.style.color="green"
+
+var h3 = document.getElementById("greens")
+h3.style.textTransform ="UpperCase";
+var h3 =document.getElementById("grocer")
+h3.style.textTransform ="UpperCase"
+
+var fruit = document.createElement("li")
+fruit.innerHTML = "peach"
+var ul = document.getElementById("fruList")
+ul.appendChild(fruit)
+
+var fruit = document.createElement("li")
+fruit.innerHTML = "Oranges"
+var ul = document.getElementById("fruList")
+ul.appendChild(fruit)
+
+var vegetable = document.createElement("li")
+vegetable.innerHTML = "managu"
+var ul = document.getElementById("vegList")
+ul.appendChild(vegetable)
+
+var vegetable = document.createElement("li")
+vegetable.innerHTML = "spinach"
+var ul = document.getElementById("vegList")
+ul.appendChild(vegetable)
