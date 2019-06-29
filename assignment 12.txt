@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Greens Kiosk</title>
+</head>
+<body>
+  <h1 id="title">Welcome to Greens Kiosk</h1>
+  <p>We sell fruits and vegetables</p>
+  <h3>onclick="showDetails('fruitList')">Fruits</h3>
+  <input name="fruits" placeholder="fruits" type="text" id="fruits"/>
+  <button onclick="appendNewElement('id')">Submit</button>
+  
+  <ul id="fruList">
+    <li>Mangoes</li>
+    <li>Bananas</li>
+    <li>Water Melons</li>
+  </ul>
+  <h3>Vegetables</h3>
+  <ul id="vegList">
+    <li>Onions</li>
+    <li>Tomatoes</li>
+    <li>Kales</li>
+  </ul>
+</body>
+</html>
+
+
+
+
+var setColor = ()=>{
+  var titleColor=document.getElementById("title");
+  titleColor.style.color =
+  titleColor.style.color ==="green"? "silver":"green";
+}
+setInterval(setColor,1000);
+  h3a.onclick=()=>{
+    
+  }
+  var fruitLists=document.getElementById('fruitList');
+  var vegLists =document.getElementById('vegList');
+  fruitLists.forEach((element)=>element.style.display='none')
+  vegLists.forEach((element)=>element.style.display='none')
+  
+  
+  
+  
+  
+  var showDetails=(idTag)=>{
+  var element = document.getElementById(idTag);
+  element.style.display=element.style.style.display =='none'?'inline-block' :'none'
+  }
+
+
+
+
+
+
+
+
